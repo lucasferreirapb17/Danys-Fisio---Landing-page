@@ -98,3 +98,185 @@ header img {
     background-color: var(--cor-primaria);
     color: var(--cor-branca);
 }
+
+/* Convenios */
+
+#convenios {
+    padding: 20px;
+    background-color: var(--cor-fundo);
+    text-align: center;
+}
+
+#convenios h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.convenios-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.convenios-container img {
+    width: 100%;
+    max-width: 140px;
+    margin: auto;
+    filter: grayscale(100%) opacity(60%);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.convenios-container img:hover {
+    filter: grayscale(0%) opacity(100%);
+    transform: scale(1.05);
+}
+
+/* DUVIDAS */
+
+#duvidas {
+    padding: 60px 20px;
+    background-color: var(--cor-branca);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#duvidas h2 {
+    text-align: center;
+    color: var(--cor-primaria);
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+details {
+    background-color: var(--cor-fundo);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border: 1px solid #e2e8f0;
+}
+
+summary {
+    font-weight: 600;
+    color: var(--cor-primaria);
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    padding-right: 20px;
+    /* Espaço para a seta */
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    font-size: 1.2rem;
+    color: var(--cor-destaque);
+}
+
+details[open] summary::after {
+    content: "-";
+}
+
+details p {
+    margin-top: 15px;
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+/* ONDE ESTAMOS */
+#onde-estamos {
+    padding: 60px 20px;
+    background-color: var(--cor-branca);
+    text-align: center;
+
+}
+
+#onde-estamos h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.unidades-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.unidade-card {
+    background-color: var(--cor-fundo);
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    border: 1px solid #e2e8f0;
+}
+
+/* DESTAQUE PARA BOTÃO UNIDADE */
+.destaque-card {
+    border-top: 4px solid var(--cor-destaque);
+}
+
+.unidade-card h3 {
+    color: var(--cor-primaria);
+    margin-bottom: 10px;
+}
+
+.unidade-card p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+/* BOTÃO MAPA */
+.btn-mapa {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--cor-texto);
+    color: var(--cor-branca);
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background 0.3s
+}
+
+.btn-mapa:hover {
+    background-color: var(--cor-primaria);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.9rem
+}
+footer p {
+    margin-bottom: 8px;
+    opacity: 0.9;
+}
+
+footer img {
+    width: 30px;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
