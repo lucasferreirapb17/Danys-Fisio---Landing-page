@@ -1,0 +1,100 @@
+/* 1. IMPORTANDO UMA FONTE MODERNA DO GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/*variavies */
+:root {
+    --cor-primaria: #0F766E;
+    --cor-destaque: #14B8A6;
+    --cor-fundo: #F8FAFC;
+    --cor-texto: #334155;
+    --cor-branca: #FFFFFF;
+}
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Impede que o layout quebre ao adicionar bordas */
+}
+
+/* INICIO */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--cor-branca);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    max-width: 180px;
+    /* Evita que a logo fique gigante, limitando o tamanho */
+}
+
+#hero-section {
+    padding: 2.5rem;
+    background-color: var(--cor-branca);
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: var(--cor-primaria);
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+
+}
+
+/*botões */
+.btns-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-particular,
+.btn-convenio {
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+
+}
+
+.btn-particular {
+    background-color: var(--cor-destaque);
+    color: var(--cor-branca);
+}
+
+.btn-particular:hover {
+    background-color: #0d9486;
+    transform: translateY(-2px);
+}
+
+.btn-convenio {
+    background-color: transparent;
+    color: var(--cor-primaria);
+    border: 2px solid var(--cor-primaria);
+}
+
+.btn-convenio:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+}
